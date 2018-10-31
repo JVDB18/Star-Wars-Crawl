@@ -1,0 +1,124 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: black;
+    margin: 0;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(..//Star-Wars-Crawl/space-1164579_1920.png);
+    background-repeat: no-repeat;
+}
+
+
+@keyframes intro{
+    0% {
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+img {
+    margin: 0 auto;
+    z-index: 1;
+    opacity: 0;
+    animation-name: intro;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+.a-long-time-ago {
+    font-size: 32px;
+    color: #4bd5ee;
+    opacity: 0;
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
+}
+
+@keyframes a-long-time-ago {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.crawl {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 800px;
+    margin: 0 0 0 -400px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    color: #ffff66;    
+    font-size: 64px;
+    text-align: justify;
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+    font-family: 'Russo One', sans-serif;
+}
+
+.crawl > div {
+    position: absolute;
+    top: 100%; 
+    animation-delay: 7s; 
+    animation-duration: 30s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1; 
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
+h1 {
+    padding-left: 120px;
+    color: #ffff66;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+    
+}
+h2{
+    padding-left: 180px;
+    color: #ffff66;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+    
+}
